@@ -62,7 +62,7 @@
   }
   
   .enter-button {
-    background-color: #5A6F8E; /* Your button color */
+    background-color: #15B296; /* Your button color */
     color: #fff;
     border: none;
     border-radius: 20px; /* Your border radius */
@@ -73,7 +73,7 @@
   }
   
   .enter-button:hover {
-    background-color: #0f346b; 
+    background-color: rgb(15, 124, 117); 
   }
   .navbar-container {
     margin-top: 5px;
@@ -84,7 +84,7 @@
     border-radius: 10px;
     font-size: 15px;
     padding: 8px 18px;
-    background-color: #5A6F8E;
+    background-color: #15B296;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -92,5 +92,5 @@
   }
   
   .connect-button:hover {
-    background-color: #5A6F8E;
+    background-color: rgb(15, 124, 117);
   }

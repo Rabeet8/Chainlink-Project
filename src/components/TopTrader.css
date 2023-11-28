@@ -4,7 +4,7 @@
     margin: 0 auto;
     color: white;
     width: 90%;
-    background: #000000; 
+    background: #020713; 
     border-radius: 10px; 
     overflow: hidden; 
     box-shadow: rgba(32, 32, 32, 0.02) 0px 0px 1px, rgba(0, 0, 0, 0.02) 0px 4px 8px, rgba(0, 0, 0, 0.02) 0px 16px 24px, rgba(0, 0, 0, 0.02) 0px 24px 32px;
@@ -19,7 +19,7 @@
     color: rgb(255, 255, 255);
     justify-content: space-between;
     padding: 10px;
-    background-color: #000000; 
+    background-color: #020713; 
     border-bottom: 1px solid #e0e0e0;
   }
   
@@ -38,12 +38,14 @@
   
   .trader-enter {
     padding: 5px 10px;
-    background-color:#5A6F8E; /* Bright green background for the button */
+    background-color:#15B296; /* Bright green background for the button */
     border: none;
     border-radius: 5px;
     cursor: pointer;
     color: white;
   }
-  
+  .trader-enter:hover {
+    background-color: rgb(15, 124, 117);
+  }
   /* Add additional styling as needed */
   
