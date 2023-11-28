@@ -1,0 +1,68 @@
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .traders-container {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Adjust the space between items */
+    justify-content: space-evenly; /* This spreads out the items evenly */
+    align-items: flex-start; /* Align items at the start of the container */
+  }
+  
+  .trader-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    border: 2px solid #000; /* Your border color */
+    border-radius: 18px;
+    background-color: #fff; /* Your background color */
+    width: 450px; /* Adjust the width as necessary */
+  }
+  
+  .user-icon {
+    width: 40px; /* Your icon size */
+    height: 40px; /* Your icon size */
+  }
+  
+  .trader-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .trader-name {
+    font-size: 1rem; /* Your font size */
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  
+  .amount-managed,
+  .apy {
+    font-size: 0.8rem; /* Your font size */
+    color: #666;
+    margin-bottom: 4px;
+  }
+  
+  .enter-button {
+    background-color: #00ffcc; /* Your button color */
+    color: #fff;
+    border: none;
+    border-radius: 20px; /* Your border radius */
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 50%; /* Adjust width as necessary */
+    align-self: center;
+  }
+  
+  .enter-button:hover {
+    background-color: #00cc99; /* Darker color on hover */
+  }
+  
