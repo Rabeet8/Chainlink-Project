@@ -27,7 +27,7 @@
     /* justify-content: center; */
     /* gap: 20px; */
     flex-grow: 1; 
-    margin-left: 13rem;
+    /* margin-left: 5rem; */
   }
   
   
@@ -49,7 +49,7 @@
     padding: 7px 10px;
     cursor: pointer;
     width: 30%;
-    margin-right: 12rem;
+    margin-right: 15rem;
     font-size: 15px;
     /* align-self: center; */
   }
@@ -58,7 +58,7 @@
     background-color: rgb(15, 124, 117); 
   }
   .icon-container {
-    position: fixed; /* Or absolute, depending on your layout */
+    position: fixed; 
     right: 20px; /* Adjust the value to match your desired position */
     top: 20px; /* Adjust the value to match your desired position */
   }

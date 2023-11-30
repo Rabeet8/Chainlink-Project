@@ -18,13 +18,13 @@
     display: flex;
     color: rgb(255, 255, 255);
     justify-content: space-between;
-    padding: 10px;
+    /* padding: 10px; */
     background-color: #020713; 
     border-bottom: 1px solid #e0e0e0;
   }
   
   .top-traders-header div {
-    width: 20%; /* Adjust the width so each column has the same width */
+    width: 35%;
     /* text-align: left;  */
   }
 
@@ -37,10 +37,10 @@
   }
   
   .trader-enter {
-    padding: 5px 10px;
+    padding: 7px 10px;
     background-color:#15B296; /* Bright green background for the button */
     border: none;
-    border-radius: 5px;
+    border-radius: 13px;
     cursor: pointer;
     color: white;
   }

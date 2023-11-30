@@ -9,9 +9,9 @@
     margin-top: 3rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 16px; /* Adjust the space between items */
-    justify-content: space-evenly; /* This spreads out the items evenly */
-    align-items: flex-start; /* Align items at the start of the container */
+    gap: 16px; 
+    justify-content: space-evenly; 
+    align-items: flex-start; 
   }
   
   .trader-box {
@@ -75,11 +75,7 @@
   .enter-button:hover {
     background-color: rgb(15, 124, 117); 
   }
-  .navbar-container {
-    margin-top: 5px;
-    text-align: right; 
-  }
-  
+ 
   .connect-button {
     border-radius: 10px;
     font-size: 15px;

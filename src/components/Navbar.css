@@ -11,3 +11,23 @@
     font-size: 18px;
   }
  
+
+  .navbar-container {
+    margin-top: 5px; 
+  }
+  
+  .connect-button {
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 8px 18px;
+    background-color: #15B296;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .connect-button:hover {
+    background-color: rgba(0, 128, 128, 1);
+  }
+  

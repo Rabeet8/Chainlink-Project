@@ -1,5 +1,5 @@
-import React from 'react';
-import './TopTrader.css'; // Make sure to create a corresponding CSS file for styling
+import React,{Link} from 'react-router-dom';
+import './TopTrader.css'; 
 
 const TopTraders = () => {
   const traders = [
@@ -22,7 +22,9 @@ const TopTraders = () => {
           <div className="trader-vault-size">{trader.vaultSize}</div>
           <div className="trader-apy">{trader.apy}</div>
           <div className="trader-var-factor">{trader.varFactor}</div>
-          <button className="trader-enter">Enter</button>
+          <Link to="/tradercard">
+          <button className="trader-enter">Check Trade</button>
+            </Link>
         </div>
       ))}
     </div>
@@ -30,3 +32,4 @@ const TopTraders = () => {
 };
 
 export default TopTraders;
+

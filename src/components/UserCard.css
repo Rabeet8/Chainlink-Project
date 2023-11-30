@@ -1,0 +1,107 @@
+.trader-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 20px; 
+  }
+  
+  .trader-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%; 
+    margin-bottom: 10px;
+  }
+  
+  .trader-name {
+    color: white;
+    font-size: large;
+    margin-bottom: 2rem;
+  
+  }
+  
+  .trader-stats {
+    color: white;
+    display: flex;
+    align-items:center;
+ 
+    flex-grow: 1; 
+    margin-left: 25rem;
+  }
+  
+  
+  .graph-card {
+    background-color: #fff; 
+    padding: 10px;
+    border-radius: 10px;
+    width: 70%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .icon-container {
+    position: fixed;
+    right: 20px; 
+    top: 20px; 
+  }
+  
+  .user-icon {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .apy-text {
+    color: #000; 
+    margin-bottom: 10px;
+  }
+  
+  .timeframe-buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .timeframe-buttons button {
+    background: none;
+    border: none;
+    color: #000;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+
+  @media (max-width: 768px) {
+   
+    .trader-stats{
+        margin-left: 12rem;
+    }
+
+     .timeframe-buttons, .invest-button {
+      width: 100%;
+      justify-content: center; 
+      margin-top: 1rem; 
+    }
+  
+    .invest-button {
+      order: -1;
+    }
+  
+    .graph-card {
+      max-width: 100%; 
+    }
+  
+    .icon-container {
+      right: 0.5rem;
+      top: 0.5rem;
+    }
+  
+    .user-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  
+    .apy-text, .trader-name, .trader-info {
+      text-align: center; 
+    }
+  }
+  

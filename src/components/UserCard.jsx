@@ -1,6 +1,6 @@
-import React, {Link} from 'react-router-dom';
+import React from 'react';
 import { LineChart, Line, XAxis, Tooltip, ResponsiveContainer } from 'recharts';
-import './TraderCard.css'; 
+import './UserCard.css'; 
 import TransactionsList from './TransactionList';
 
 
@@ -14,23 +14,21 @@ const data = [
   ];
   
 
-const TraderCard = () => {
+const UserCard = () => {
   return (
     <>
     <div className='trader-container'>
-        <h4 className="trader-name">Trader Name</h4>
+        <h4 className="trader-name">User Name</h4>
       <div className="trader-header">
         <div className="trader-stats">
-          <span className="trader-info">Days Trading - 12</span>
-          <span className="trader-info">Investors - 4</span>
-          <span className="trader-info">Vault Size - 500k</span>
-          <Link to="/modal">
-          <button className="invest-button">Invest</button>
-        </Link>
+          <span className="trader-info">Portfolio- 100k</span>
+          {/* <span className="trader-info">Investors - 4</span> */}
+          <span className="trader-info">APY 40%</span>
+          {/* <button className="invest-button">Invest</button> */}
         </div>
       </div>
       <div className="graph-card">
-        <div className="apy-text">+50% APY</div>
+        <div className="apy-text">+10% APY</div>
         <ResponsiveContainer width="100%" height={150}>
           <LineChart data={data}>
             <XAxis dataKey="name" hide />
@@ -55,4 +53,4 @@ const TraderCard = () => {
   );
 };
 
-export default TraderCard;
+export default UserCard;
