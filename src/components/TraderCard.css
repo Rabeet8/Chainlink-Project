@@ -1,0 +1,89 @@
+.trader-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Aligns the container's children to the center */
+    margin-top: 20px; /* Adjust as needed */
+  }
+  
+  .trader-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* Aligns the items to the bottom, closer to the graph card */
+    width: 100%; /* Ensures the header is full width */
+    margin-bottom: 10px; /* Reduces the gap between header and graph card */
+  }
+  
+  .trader-name {
+    color: white;
+    font-size: large;
+    margin-bottom: 2rem;
+  
+  }
+  
+  .trader-stats {
+    color: white;
+    display: flex;
+    align-items:center;
+    /* justify-content: center; */
+    /* gap: 20px; */
+    flex-grow: 1; 
+    margin-left: 13rem;
+  }
+  
+  
+  .graph-card {
+    background-color: #fff; 
+    padding: 10px;
+    border-radius: 10px;
+    width: 70%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  
+  .invest-button{
+    background-color: #15B296; 
+    color: #fff;
+    border: none;
+    border-radius: 10px; 
+    padding: 7px 10px;
+    cursor: pointer;
+    width: 30%;
+    margin-right: 12rem;
+    font-size: 15px;
+    /* align-self: center; */
+  }
+
+  .invest-button:hover {
+    background-color: rgb(15, 124, 117); 
+  }
+  .icon-container {
+    position: fixed; /* Or absolute, depending on your layout */
+    right: 20px; /* Adjust the value to match your desired position */
+    top: 20px; /* Adjust the value to match your desired position */
+  }
+  
+  .user-icon {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    border-radius: 50%; /* Makes the image round */
+  }
+
+  .apy-text {
+    color: #000; /* Text color */
+    margin-bottom: 10px;
+  }
+  
+  .timeframe-buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .timeframe-buttons button {
+    background: none;
+    border: none;
+    color: #000; /* Button text color */
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
