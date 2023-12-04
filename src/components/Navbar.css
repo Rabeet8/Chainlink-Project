@@ -1,10 +1,15 @@
-.header-container {
+/* .header-container {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
     padding: 10px;
+  } */
+  .main-navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem; /* Adjust padding as necessary */
   }
-  
   .logo {
     margin: 0; 
     color: white;
@@ -29,5 +34,57 @@
   
   .connect-button:hover {
     background-color: rgba(0, 128, 128, 1);
+  }
+  
+
+   
+   .glass-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 30px; /* Check if there's an overriding style with higher specificity */
+    margin-top: 1rem;
+    margin-left: auto; /* Use 'auto' to center the navbar */
+    margin-right: auto; /* Use 'auto' to center the navbar */
+    box-shadow: 0 8px 32px rgba(3, 3, 3, 0.918);
+    width: calc(100% - 10px); /* Reduce the width by the left and right margins */
+    max-width: 500px; /* Set a max-width if desired */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 0; /* Reset padding to ensure alignment */
+  }
+  
+  .nav-links li {
+    padding: 0.5rem;
+    /* If your 'li' elements have a background, set their border-radius too. */
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+    /* Set border-radius here if 'a' has a background color */
+  }
+  
+  .nav-links a:hover {
+    color: #15B296;
+  }
+  
+  /* Use media queries to adjust for smaller screens */
+  @media (max-width: 768px) {
+    .glass-navbar {
+      /* Adjust margins and padding for smaller screens */
+      margin-left: 5%; /* Example for smaller screens */
+      margin-right: 5%; /* Example for smaller screens */
+    }
   }
   

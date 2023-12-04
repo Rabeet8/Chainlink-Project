@@ -15,7 +15,7 @@ const Hero = () => {
         
       </div>
       <Link to="/tradingview">
-        <button className="user_btn">Get Started</button>
+        <button className="user_btn" >Get Started</button>
       </Link>
     </div>
   );

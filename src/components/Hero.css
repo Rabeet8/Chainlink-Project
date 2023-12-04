@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=PT+Serif:wght@400;700&display=swap');
 
+a {
+  text-decoration: none;
+}
+
 /* Base styles */
 .text-container {
   text-align: center;
@@ -41,11 +45,10 @@ h1, .blue-text, .tag-line {
   font-family: 'PT Serif', serif;
   margin-left: auto;
   margin-right: auto;
-  text-decoration: none;
-  display: block; /* Center button with auto margins */
+  text-decoration: none !important;
+  border-bottom-style: none;
+  display: block;
 }
-
-/* ... other styles ... */
 
 /* Responsive adjustments using media queries */
 @media (max-width: 1200px) {

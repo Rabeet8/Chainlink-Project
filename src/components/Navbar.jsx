@@ -1,80 +1,48 @@
-import {React,useState,useEffect} from 'react'
+import React from 'react'
 import './Navbar.css'
 import {Link} from 'react-router-dom';
 
-
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 const Navbar = () => {
-    const [walletAddress, setWalletAddress] = useState(null);
-
-
-    useEffect(() => {
-        const address = sessionStorage.getItem("accountAddress");  
-        if (address) {
-          setWalletAddress(address);
-        }
    
-    }, []);
-
-
-     const connectMetaMaskFunc = async (SelectedChain) => {
-        console.log("SelectedChain", SelectedChain);
-        if (window.ethereum) {
-          try {
-            // Switching chain and connecting to MetaMask
-            await window.ethereum.request({
-              method: 'wallet_switchEthereumChain',
-              params: [{ chainId: SelectedChain === "Polygon" ? "0x13881" : "0x5" }],
-            });
-            const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
-      
-            // Handling the connected account
-            handleConnectedAccount(accounts);
-      
-            // Adding an event listener to handle account changes
-            window.ethereum.on('accountsChanged', handleConnectedAccount);
-      
-          } catch (error) {
-            console.error('Error:', error);
-          }
-        } else {
-          console.error('MetaMask not found.');
-        }
-      }
-
-      const handleConnectedAccount = (accounts) => {
-        if (accounts.length > 0) {
-          const currentAccount = accounts[0];
-          console.log('Connected Account Address:', currentAccount);
-      
-          // Store the connected account address in session storage
-          sessionStorage.setItem("accountAddress", currentAccount);
-          sessionStorage.setItem("walletType", "metaMask");
-      
-          // Update the walletAddress state
-          setWalletAddress(currentAccount);
-      
-          // You can perform further actions with the connected account here.
-        } else {
-          console.log('No connected accounts.');
-        }
-      };
       
     
   return (
-    <div className="header-container">
-        
-    <h1 className='logo'>Our Project Name</h1>
-        
     
-    <div className="navbar-container">
-      <button onClick={connectMetaMaskFunc} className="connect-button">
-        {walletAddress ? `${walletAddress.substring(0, 6)}...${walletAddress.substring(walletAddress.length - 4)}` : "Connect Wallet"}
-      </button>
-    </div>
-  </div>
+        <div className="main-navbar-container">
+          <h1 className='logo'>Our Project Name</h1>
+          
+          <nav className="glass-navbar">
+            <ul className="nav-links">
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/aboutus">About Us</Link></li>
+              <li><Link to="/contactus">Contact Us</Link></li>
+            </ul>
+          </nav>
+    
+          <div className="navbar-container">
+          <ConnectButton accountStatus="address" chainStatus="none" showBalance={false} />
+          </div>
+        </div>
   
   )
 }
 
 export default Navbar
+// import React from 'react';
+// import './Navbar.css'; // Make sure to link the CSS file
+
+// const GlassNavbar = () => {
+//   return (
+//     <nav className="glass-navbar">
+//       <ul className="nav-links">
+//         <li><a href="#home">Home</a></li>
+//         <li><a href="#aboutus">About Us</a></li>
+//         <li><a href="#contactus">Contact Us</a></li>
+//       </ul>
+//     </nav>
+//   );
+// }
+
+// export default GlassNavbar;
